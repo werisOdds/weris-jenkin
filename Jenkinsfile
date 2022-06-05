@@ -13,6 +13,7 @@ pipeline {
             steps { //ในโปรเจคต้องมี package.json
                 nodejs('node.17.9.0') {
                     sh 'npm install'
+                    sh 'echo Hello'
                 }
             }
         }
